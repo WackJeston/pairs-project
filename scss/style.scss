@@ -1,18 +1,20 @@
+@use "utility/text";
+@use "utility/colours";
+@use "utility/buttons";
+@use "utility/icons";
+@use "utility/body";
+
+@use "main/main";
+@use "main/header";
+@use "main/intro";
+@use "main/services";
+@use "main/carousel";
+@use "main/partners";
+@use "main/book-now";
+@use "main/footer";
 //---------------------------------------
 //  Imports HomePage
 //---------------------------------------
-
-
-// Utility
-@import "utility/body";
-@import "utility/colors";
-@import "utility/text";
-
-// Header & Footer
-@import "main/temp-header";
-@import "main/footer";
-
-// Page Components
-@import "main/carousel";
-@import "main/partners";
-@import "main/book-now";
+@use "about-us/overview";
+@use "about-us/local-goods";
+@use "about-us/past-events";

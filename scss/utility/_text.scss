@@ -1,6 +1,198 @@
-//---------------------------------------
-//  Text Utility
-//---------------------------------------
+@use "utility/colours";
+
+a {
+  text-decoration: none;
+    color: white;
+  @media (min-width: 768px){
+    // color: white;
+  }
+}
+h1 {
+  display: block;
+  color: colours.$terracotta;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+.header-h1 {
+  display: none;
+
+  @media (min-width: 768px){
+  font-size: 2rem;
+  line-height: 2.5rem;
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+  }
+
+  @media (min-width: 1025px){
+  font-size: 3rem;
+  line-height: 3.5rem;
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  width: 500px;
+  }
+}
+
+.header-h1:after {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 155px;
+  height: 1px;
+  right: 0px;
+  bottom: -10px;
+
+  @media (min-width: 768px){
+
+  }
+
+  @media (min-width: 1025px){
+    bottom: -20px;
+  }
+}
+
+.header-h2 {
+  display: none;
+
+  @media (min-width: 768px){
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: block;
+  margin-top: 10px;
+  letter-spacing: 2.5px;
+  font-weight: 300;
+  }
+
+  @media (min-width: 1025px){
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  display: block;
+  margin-top: 20px;
+  }
+}
+
+.nav-p {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+
+  @media (min-width: 768px){
+
+  }
+
+  @media (min-width: 1025px){
+    padding: 1rem 2rem;
+  }
+}
+
+.nav-p:hover {
+  color: colours.$terracotta-dark;
+}
+
+.section-header-h1 {
+  color: colours.$terracotta;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  display: flex;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2.5px;
+  margin: 30px auto;
+
+  @media (min-width:481px) {
+  margin: 50px auto;
+  }
+
+  @media (min-width: 768px){
+  margin: 50px 0;
+  align-self: flex-start;
+  width: 70%;
+  }
+
+  @media (min-width: 1025px){
+    width: 100%;
+  }
+}
+
+.section-header-h1:after {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 215px;
+  height: 1px;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+
+  @media (min-width: 768px){
+  left: 0px;
+  transform: translate(0%);
+  }
+}
+
+.content-a {
+  color: colours.$terracotta;
+  font-weight: bold;
+}
+
+.service-card-img {
+  max-height: 180px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    max-height: none;
+  }
+}
+
+.service-card-img  img{
+  transition: transform 0.2s ease-in;
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+
+  @media (min-width:768px) {
+    height: 250px;
+  }
+
+  @media (min-width:1025px) {
+    height: 180px;
+  }
+}
+
+.service-card-img  img:hover{
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in;
+}
+
+.service-card-header {
+  font-size: 1.5rem;
+  color: colours.$terracotta;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 15px 0 45px;
+}
+
+.service-card-header:after {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 125px;
+  height: 1px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -65px;
+}
+
+.service-card {
+  text-align: center;
+}
 
 // Black Text ----------------------
 .black, .black a {
@@ -20,7 +212,7 @@
 
 .black h1, .black h2, .black h3, .black h4, .black h5, .black h6  {
   font-weight: 300;
-  color: $terracotta;
+  color: colours.$terracotta;
 }
 
 .black h3 {

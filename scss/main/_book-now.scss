@@ -1,3 +1,5 @@
+@use "utility/colours";
+
 //---------------------------------------
 //  Book Now HomePage
 //---------------------------------------
@@ -7,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $darkgray;
+  background-color: colours.$darkgray;
   padding: 50px 40px;
 }
 
@@ -15,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -31,11 +33,11 @@
   padding: 10px;
   border: 1px solid gray;
   border-radius: 2px;
-  color: $terracotta;
+  color: colours.$terracotta;
 }
 
 .book-now button:hover {
-  background-color: $terracotta;
+  background-color: colours.$terracotta;
   color: white;
   border: 1px solid white;
   cursor: pointer;

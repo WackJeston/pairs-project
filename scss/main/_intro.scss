@@ -1,0 +1,21 @@
+@use "utility/colours";
+
+.intro-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // margin: 0 auto;
+  text-align: center;
+  @media (min-width: 768px){
+    text-align: left;
+  }
+}
+
+.intro-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width:481px) {
+  }
+}
