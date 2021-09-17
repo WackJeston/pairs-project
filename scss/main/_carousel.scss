@@ -1,0 +1,111 @@
+//---------------------------------------
+//  Carousel HomePage
+//---------------------------------------
+
+.carousel {
+  background-image: url("../imgs/beef.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-overlay {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  background-color: $darkgray-clear;
+  padding: 40px;
+  margin: 0;
+}
+
+.carousel-paragraph {
+display: flex;
+flex-direction: row;
+max-width: 100%;
+align-items: center;
+text-align: center;
+}
+
+.carousel-paragraph p {
+  margin: 0 20px;
+}
+
+.carousel-paragraph .fa-quote-left {
+  align-self: flex-start;
+}
+
+.carousel-paragraph .fa-quote-right {
+  align-self: flex-end;
+}
+
+.carousel .white-line {
+  width: 60%;
+  margin: 20px 0;
+}
+
+.carousel-overlay h6 {
+  margin: 2px 0;
+}
+
+.carousel .dot-container {
+  width: 40%;
+  margin: 35px 0 8px 0;
+}
+
+
+
+
+//---------------------------------------
+//  Carousel Breakpoints
+//---------------------------------------
+
+
+
+@media (min-width:481px) and (max-width:1024px) {
+  .carousel-overlay {
+    padding: 50px 40px;
+  }
+
+  .carousel-paragraph p {
+    width: 401px;
+  }
+
+  .carousel .white-line{
+    width: 200px;
+  }
+
+  .carousel-dots {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-paragraph p {
+    width: 688px;
+  }
+}
+
+@media (min-width:1025px) {
+  .carousel-overlay {
+    padding: 60px 40px;
+  }
+
+  .carousel-paragraph p {
+    width: 945px;
+  }
+
+  .carousel .white-line {
+    width: 350px;
+  }
+
+  .carousel-dots {
+    width: 250px;
+  }
+}
+
+@media (min-width:1200px) {
+  .carousel-paragraph p {
+    width: 1100px;
+  }
+}

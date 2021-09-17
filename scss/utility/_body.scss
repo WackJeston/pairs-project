@@ -1,0 +1,44 @@
+//---------------------------------------
+//  Body Utility
+//---------------------------------------
+
+body {
+  margin: 0;
+}
+
+// lines ---------------------
+.white-line {
+  height: 1px;
+  background-color: white;
+}
+
+.black-line {
+  height: 1px;
+  background-color: black;
+}
+
+// Dots ---------------------
+.dot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.1s;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition-timing-function: cubic-bezier(.68,.01,.51,.99);
+}
+
+.dot-1 {
+  background-color: white;
+  cursor: default;
+}

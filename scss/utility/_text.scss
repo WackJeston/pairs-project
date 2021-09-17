@@ -1,0 +1,66 @@
+//---------------------------------------
+//  Text Utility
+//---------------------------------------
+
+// Black Text ----------------------
+.black, .black a {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.black a:hover {
+  text-decoration: underline;
+}
+
+.black p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.black h1, .black h2, .black h3, .black h4, .black h5, .black h6  {
+  font-weight: 300;
+  color: $terracotta;
+}
+
+.black h3 {
+  font-size: 2rem;
+}
+
+
+// White Text ---------------------
+.white, .white a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.white a:hover {
+  text-decoration: underline;
+}
+
+.white p {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.white h1, .white h3, .white h4, .white h5, .white h6  {
+  font-weight: 300;
+}
+
+.white h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.white h3 {
+  font-size: 2rem;
+}
+
+.white h4 {
+  font-size: 1.5rem;
+}
+
+.white h6 {
+  font-size: 1rem;
+}

@@ -1,0 +1,18 @@
+//---------------------------------------
+//  Imports HomePage
+//---------------------------------------
+
+
+// Utility
+@import "utility/body";
+@import "utility/colors";
+@import "utility/text";
+
+// Header & Footer
+@import "main/temp-header";
+@import "main/footer";
+
+// Page Components
+@import "about-us/overview";
+@import "about-us/local-goods";
+@import "about-us/past-events";

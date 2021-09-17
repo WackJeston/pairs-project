@@ -1,0 +1,62 @@
+//---------------------------------------
+//  local Goods - About Us
+//---------------------------------------
+
+.local-goods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $darkgray;
+  padding: 40px 40px 50px 40px;
+}
+
+.local-goods div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.local-goods h2, .local-goods h3 {
+  margin: 2px 0;
+  opacity: 0.8;
+  text-transform: capitalize;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+.local-goods h2:hover, .local-goods h3:hover {
+  transform: scale(1.05) translatex(-5px);
+  transition-timing-function: cubic-bezier(.22,.68,0,1.71);
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+//---------------------------------------
+//  Overview Breakpoints
+//---------------------------------------
+
+@media (min-width:481px) {
+  .local-goods div {
+    width: 401px;
+  }
+}
+
+@media (min-width:769px) {
+  .local-goods div {
+    width: 688px;
+  }
+}
+
+@media (min-width:1025px) {
+  .local-goods div {
+    width: 945px;
+  }
+}
+
+@media (min-width:1200px) {
+  .local-goods div {
+    width: 1100px;
+  }
+}

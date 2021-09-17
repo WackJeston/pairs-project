@@ -1,0 +1,43 @@
+//---------------------------------------
+//  Past Events Carousel - About Us
+//---------------------------------------
+
+
+.past-events {
+  display: flex;
+  background-image: url("../imgs/wedding.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.past-events .title-selector {
+  background-color: $darkgray-extra-clear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  padding: 20px;
+}
+
+.past-events .title-selector:hover {
+  background-color: $clear;
+}
+
+.past-events:focus-within .title-selector {}
+
+.past-events .white-line {
+  width: 250PX;
+}
+
+.past-events h6 {
+  margin: 10px 0 20px 0;
+  font-weight: 400;
+}
+
+.past-events .dot-container {
+  width: 175px;
+  margin: 0;
+}
