@@ -4,17 +4,15 @@
 @use "utility/icons";
 @use "utility/body";
 
-@use "main/main";
 @use "main/header";
+@use "main/footer";
+
+@use "main/main";
 @use "main/intro";
 @use "main/services";
 @use "main/carousel";
 @use "main/partners";
 @use "main/book-now";
-@use "main/footer";
-//---------------------------------------
-//  Imports HomePage
-//---------------------------------------
 @use "about-us/overview";
 @use "about-us/local-goods";
 @use "about-us/past-events";
