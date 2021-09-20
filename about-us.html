@@ -5,6 +5,10 @@
     <title>About Us - Terracotta Catering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="../js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/slick-1.8.1/slick/slick-theme.css"/>
+
     <!-- CSS ------------------------------->
     <link rel="stylesheet" href="css/style.css">
 
@@ -99,15 +103,40 @@
     </div>
 
     <!-- Past Events Carousel ---------------------->
-    <div class="past-events white">
-      <div class="title-selector">
-        <div class="white-line"></div>
-        <h6>EXAMPLE EVENT</h6>
-        <div class="dot-container">
-          <div class="dot dot-1"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+    <div class="your-class">
+
+      <div class="past-events past-events-1 white">
+        <div class="title-selector">
+          <div class="white-line"></div>
+          <h6>EXAMPLE EVENT</h6>
+        </div>
+      </div>
+
+      <div class="past-events past-events-2 white">
+        <div class="title-selector">
+          <div class="white-line"></div>
+          <h6>EXAMPLE EVENT</h6>
+        </div>
+      </div>
+
+      <div class="past-events past-events-3 white">
+        <div class="title-selector">
+          <div class="white-line"></div>
+          <h6>EXAMPLE EVENT</h6>
+        </div>
+      </div>
+
+      <div class="past-events past-events-4 white">
+        <div class="title-selector">
+          <div class="white-line"></div>
+          <h6>EXAMPLE EVENT</h6>
+        </div>
+      </div>
+
+      <div class="past-events past-events-5 white">
+        <div class="title-selector">
+          <div class="white-line"></div>
+          <h6>EXAMPLE EVENT</h6>
         </div>
       </div>
     </div>
@@ -157,6 +186,19 @@
         <h6>COPYRIGHT &copy TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</h6>
       </div>
     </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        autoplay: true,
+        dots: true,
+        arrows: false
+      });
+    });
+    </script>
 
   </body>
 </html>

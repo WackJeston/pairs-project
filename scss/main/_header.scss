@@ -9,14 +9,14 @@ header .container{
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.2) 100%),  url("../imgs/wang-xi-yinOyCr4Jmc-unsplash.jpg");
+  background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.2) 100%),  url("../imgs/header");
   background-blend-mode: normal;
   background-position: center;
   background-size: cover;
 
   @media (min-width: 768px){
     color: white;
-    background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.7) 100%),  url("../imgs/wang-xi-yinOyCr4Jmc-unsplash.jpg");
+    background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.7) 100%),  url("../imgs/header.jpg");
     background-position: center;
     background-size: cover;
   }
