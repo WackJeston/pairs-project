@@ -5,6 +5,10 @@
     <title>Terracotta Catering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="../js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/slick-1.8.1/slick/slick-theme.css"/>
+
     <!-- CSS ------------------------------->
     <link rel="stylesheet" href="css/style.css">
 
@@ -26,10 +30,12 @@
       <div class="header-outer">
         <div class="header-contact">
           <div class="header-subcontainer contact-subcontainer">
-            <div class="logo">
-              <span class="logo-line1">terracotta</span>
-              <span class="logo-line2">catering</span>
-            </div>
+            <a href="">
+              <div class="logo">
+                <span class="logo-line1">terracotta</span>
+                <span class="logo-line2">catering</span>
+              </div>
+            </a>
             <div class="contact-container">
               <a class="contact-email contact-text" href="mailto:info@terracotta.com?subject=feedback"><i class="fas fa-envelope email-icon"></i>info@terracotta.com</a>
               <a class="contact-phone contact-text" href="tel:01235-852-894"><i class="fas fa-phone phone-icon"></i>01235-852-894</a>
@@ -175,21 +181,64 @@
     </div>
 
     <!-- Carousell ---------------------->
-    <div class="carousel white">
-      <div class="carousel-overlay">
-        <div class="carousel-paragraph">
-          <i class="fas fa-quote-left"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <i class="fas fa-quote-right"></i>
+    <div class="your-class">
+      <div>
+        <div class="carousel carousel-home-1 white">
+          <div class="carousel-overlay">
+            <div class="carousel-paragraph">
+              <i class="fas fa-quote-left"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <i class="fas fa-quote-right"></i>
+            </div>
+          <div class="white-line"></div>
+          <h6>RONI HERDYANZAH</h6>
+          <h6>ADANE ENERGY</h6>
+          </div>
         </div>
-        <div class="white-line"></div>
-        <h6>RONI HERDYANZAH</h6>
-        <h6>ADANE ENERGY</h6>
-        <div class="dot-container">
-          <div class="dot dot-1"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+      </div>
+
+      <div>
+        <div class="carousel carousel-home-2 white">
+          <div class="carousel-overlay">
+            <div class="carousel-paragraph">
+              <i class="fas fa-quote-left"></i>
+              <p>Donec imperdiet ultricies est id scelerisque. Proin hendrerit elit eget sollicitudin tincidunt. Duis id ultricies mauris. Mauris lectus diam, scelerisque et sem ut, vulputate elementum nibh. Vivamus iaculis urna vitae ultricies fringilla.</p>
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="white-line"></div>
+            <h6>Cíntia Dirksen</h6>
+            <h6>Pure sylver conference</h6>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="carousel carousel-home-3 white">
+          <div class="carousel-overlay">
+            <div class="carousel-paragraph">
+              <i class="fas fa-quote-left"></i>
+              <p>Quisque nec scelerisque turpis. Integer porta, urna ut finibus bibendum, lectus eros sagittis nunc, et sodales nulla leo a diam. Mauris porttitor tristique lectus nec dapibus. Etiam ultrices, sapien in iaculis varius, est nibh condimentum arcu, eget congue metus elit eu tortor.</p>
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="white-line"></div>
+            <h6>Suljo Messina</h6>
+            <h6>Crystal clear design gallery</h6>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="carousel carousel-home-4 white">
+          <div class="carousel-overlay">
+            <div class="carousel-paragraph">
+              <i class="fas fa-quote-left"></i>
+              <p>Pellentesque id consectetur turpis. Maecenas vel elementum massa, ut elementum nisi. Fusce vel dolor tempor, consectetur purus vel, rhoncus magna. Mauris accumsan purus diam. Vivamus aliquam libero non ligula accumsan ultrices.</p>
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="white-line"></div>
+            <h6>Abhay Balık</h6>
+            <h6>Balık consultants</h6>
+          </div>
         </div>
       </div>
     </div>
@@ -260,5 +309,19 @@
         <h6>COPYRIGHT &copy TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</h6>
       </div>
     </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        autoplay: true,
+        dots: true,
+        arrows: false
+      });
+    });
+    </script>
+
   </body>
 </html>

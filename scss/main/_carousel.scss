@@ -5,10 +5,25 @@
 //---------------------------------------
 
 .carousel {
-  background-image: url("../imgs/beef.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.carousel-home-1 {
+  background-image: url("../imgs/beef.jpg");
+}
+
+.carousel-home-2 {
+  background-image: url("../imgs/shaun-meintjes-9JEhyqOtepI-unsplash.jpg");
+}
+
+.carousel-home-3 {
+  background-image: url("../imgs/katarzyna-grabowska-V15j7K48MUE-unsplash.jpg");
+}
+
+.carousel-home-4 {
+  background-image: url("../imgs/kelvin-han-a-niLBbZF4o-unsplash.jpg");
 }
 
 .carousel-overlay {
