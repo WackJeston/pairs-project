@@ -9,7 +9,7 @@ header .container{
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.2) 100%),  url("/img/wang-xi-yinOyCr4Jmc-unsplash.jpg");
+  background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.2) 100%),  url("/imgs/wang-xi-yinOyCr4Jmc-unsplash.jpg");
   background-blend-mode: normal;
   background-position: center;
   background-size: cover;
@@ -122,11 +122,29 @@ header .container{
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  position: relative;
+  z-index: 2;
+  margin-bottom: 15px;
 
   @media (min-width: 768px){
     margin: 0 auto 0 0;
   }
+}
+
+.logo::after {
+  display: none;
+    @media (min-width: 768px){
+      display: block;
+      content: "";
+      background: rgba(255, 255, 255, 0.6);
+      width: 206px;
+      height: 140px;
+      position: absolute;
+      z-index: -1;
+      left: -15px;
+      bottom: -15px;
+      border-radius: 10px;
+    }
 }
 
 .logo-line1 {
