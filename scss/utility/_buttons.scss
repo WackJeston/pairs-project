@@ -16,12 +16,14 @@
     margin: 30px 0 30px;
     letter-spacing: 2px;
     width: 200px;
+    border: 1px solid white;
   }
 }
 
 .button-header:hover {
   background: white;
   color: colours.$terracotta;
+  border: 1px solid colours.$terracotta;
 }
 
 .button-header-mobile {
