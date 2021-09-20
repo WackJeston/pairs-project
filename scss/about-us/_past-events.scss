@@ -1,15 +1,25 @@
-@use "utility/colours";
-
 //---------------------------------------
 //  Past Events Carousel - About Us
 //---------------------------------------
 
+@use "utility/colours";
 
 .past-events {
   display: flex;
-  background-image: url("../imgs/wedding.jpg");
+  background-image: url("../imgs/example-event.jpg");
   background-size: cover;
   background-position: center;
+  transition: transform 0.1s, ;
+}
+
+.past-events:hover {
+  transform: scale(1.01);
+  transition-timing-function: cubic-bezier(.22,.68,0,1.71);
+}
+
+.past-events:hover .title-selector {
+  opacity: 0;
+  transition-timing-function: cubic-bezier(.22,.68,0,1.71);
 }
 
 .past-events .title-selector {
@@ -23,12 +33,6 @@
   text-align: center;
   padding: 20px;
 }
-
-.past-events .title-selector:hover {
-  background-color: colours.$clear;
-}
-
-.past-events:focus-within .title-selector {}
 
 .past-events .white-line {
   width: 250PX;
