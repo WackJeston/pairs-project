@@ -251,6 +251,50 @@ h1 {
   text-align: center;
 }
 
+.testimonials-header {
+  color: colours.$terracotta;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  display: flex;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2.5px;
+  margin: 30px auto;
+
+  @media (min-width:481px) {
+  margin: 50px auto;
+  justify-content: center;
+  font-size: 2.5rem;
+  }
+
+  @media (min-width: 768px){
+  margin: 50px 0;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 70%;
+  }
+
+  @media (min-width: 1025px){
+    width: 100%;
+  }
+}
+
+.testimonials-header:after {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 215px;
+  height: 1px;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+
+  @media (min-width: 768px){
+  left: 0px;
+  transform: translate(0%);
+  }
+}
+
 // Black Text ----------------------
 .black, .black a {
   font-family: 'Montserrat', sans-serif;

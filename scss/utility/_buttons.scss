@@ -44,3 +44,24 @@
 .button-nav {
   padding: 1rem 2rem;
 }
+
+.contact-button-white {
+  font-size: 1.2rem;
+  width: 220px;
+  margin: 0 auto auto;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  color: colours.$terracotta;
+
+  @media (min-width: 1025px) {
+    margin: 26px auto auto;
+  }
+}
+
+.contact-button-white:hover {
+  background-color: colours.$terracotta;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
