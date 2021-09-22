@@ -355,7 +355,10 @@ h1 {
 }
 
 .white h6 {
-  font-size: 1rem;
+  font-size: 0.875rem;
+  @media (min-width: 768px){
+    font-size: 1rem;
+  }
 }
 
 .carousel h6 {
