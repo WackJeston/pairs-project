@@ -10,7 +10,7 @@ document.addEventListener("scroll", function(){ // or window.addEventListener("s
    if (window.innerWidth <= 320 && previous_value > value && value <= 205) {
      document.querySelector(".header-content-inner").style.position = "relative";
    }
-   else if (window.innerWidth <= 481 && previous_value > value && value <= 185) {
+   else if (window.innerWidth <= 767 && previous_value > value && value <= 185) {
      document.querySelector(".header-content-inner").style.position = "relative";
    }
    else if (window.innerWidth <= 1024 && window.innerWidth >= 768 && previous_value > value && value <= 410) {
@@ -21,7 +21,7 @@ document.addEventListener("scroll", function(){ // or window.addEventListener("s
    }
 
 
-   else if (window.innerWidth <= 481 && previous_value > value && value >= 206) {
+   else if (window.innerWidth <= 767 && previous_value > value && value >= 206) {
     document.querySelector(".header-content-inner").className= `header-content-inner scroll-up`;
     document.querySelector(".header-content-inner").style.position = "fixed";
    }
@@ -35,7 +35,7 @@ document.addEventListener("scroll", function(){ // or window.addEventListener("s
    }
 
 
-   else if (window.innerWidth <= 481 && previous_value < value && value >= 400) {
+   else if (window.innerWidth <= 767 && previous_value < value && value >= 400) {
     document.querySelector(".header-content-inner").className = `header-content-inner scroll-down`;
    }
    else if (window.innerWidth >= 768 && window.innerWidth <= 1024 && previous_value < value && value >= 460) {

@@ -1,11 +1,12 @@
 //---------------------------------------
 //  Carousel HomePage
 //---------------------------------------
+
+@use "utility/colours";
+
 .your-class {
   display: block;
 }
-
-@use "utility/colours";
 
 .carousel {
   background-position: center;
