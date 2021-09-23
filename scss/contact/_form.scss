@@ -5,35 +5,38 @@
 @use "utility/colours";
 
 .form-section {
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 40px 40px 40px;
 }
+
 
 // Title Section ---------------------------
 .form-section .title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 40px 0;
 }
 
 .form-section .black-line {
   width: 200px;
+  position: relative;
+  bottom: 14px;
 }
 
 
 // Form Section ---------------------------
 .form-section .form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .form-section .row, .form-container textarea {
   display: flex;
   flex-direction: row;
-  width: 100%;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .form-section .row input {
@@ -79,40 +82,112 @@
 
 .form-section .gdpr input {
   margin: 0;
-  width: 40px;
-  height: 40px;
+  max-width: 15px;
+  max-height: 15px;
+  min-width: 15px;
+  min-height: 15px;
   position: relative;
-  bottom: 8px;
+  top: 7px;
+  left: 5px;
 }
 
 .form-section .gdpr input:after {
   background-color: colours.$darkgray;
 }
 
+.form-section .recaptcha-submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.form-section .g-recaptcha, .form-section .submit-button {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 10px;
+  color: white;
+  background-color: colours.$darkgray;
+  border: solid 1px colours.$clear;
+  border-radius: 3px;
+}
+
+.form-section .g-recaptcha:hover, .form-section .submit-button:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px colours.$terracotta;
+}
+
+.form-section .fa-check {
+  margin-left: 10px;
+  display: none;
+}
+
+.form-section .g-recaptcha:focus .fa-check {
+  display: flex;
+}
+
+.form-section .submit-button {
+  margin: 0 0 0 auto;
+  text-transform: uppercase;
+}
+
+
+// Map Section ---------------------------
+.map-section {
+  width: 100%;
+}
+
+#mapid {
+  height: 400px;
+  margin-top: 40px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px colours.$darkgray-clear;
+}
+
+
 //---------------------------------------
 //  Services Breakpoints
 //---------------------------------------
 
 @media (min-width:481px) {
-  .form-container {
+  .form-section .form-container {
     width: 401px;
   }
 }
 
 @media (min-width:769px) {
-  .form-container {
+  .form-section .form-container {
     width: 688px;
   }
 }
 
 @media (min-width:1025px) {
-  .form-container {
+  .form-section {
     width: 945px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+  }
+
+  .form-section .form-container {
+    width: 452px;
+    margin: 0 40px 40px 0;
+  }
+
+  .map-section {
+    height: 100%;
+  }
+
+  #mapid {
+    margin: 0;
   }
 }
 
 @media (min-width:1200px) {
-  .form-container {
+  .form-section {
     width: 1100px;
   }
 }
