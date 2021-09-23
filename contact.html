@@ -2,11 +2,15 @@
 <html lang="en">
 
   <head>
-    <title>Services - Terracotta Catering</title>
+    <title>Contact - Terracotta Catering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS ------------------------------->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet Map CSS and JS Files ---------------------->
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <script src="js/leaflet/leaflet.js"></script>
 
     <!-- Font Awsome ---------------------->
     <script src="https://kit.fontawesome.com/c8712841cc.js" crossorigin="anonymous"></script>
@@ -75,40 +79,36 @@
       </header>
     </div>
 
-    <!-- Main Content Section ----------------------->
-    <div class="services-container">
-      <div class="black title-container">
-        <h3>services</h3>
+    <!-- Contact Form Section ----------------------------->
+    <div class="form-section black">
+      <!-- Contact Title -->
+      <div class="title-container">
+        <h3>get in touch</h3>
         <div class="black-line"></div>
       </div>
-      <div class="services-card-container">
-        <div class="services-column sc-1 white">
-          <h4>Corporate</h4>
-          <div class="white-line"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          <div class="services-img si-1"><div class="services-overlay"></div></div>
+      <!-- Contact Form -->
+      <div class="form-container">
+        <div class="row">
+          <input type="text" name="first-name" placeholder="First Name" class:"form-left">
+          <div class="spacer"></div>
+          <input type="text" name="last-name" placeholder="Last Name" class:"form-right">
         </div>
-        <div class="services-column sc-2 white">
-          <h4>Weddings</h4>
-          <div class="white-line"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          <div class="services-img si-2"><div class="services-overlay"></div></div>
+        <div class="row">
+          <input type="text" name="email" placeholder="Email" class:"form-left">
+          <div class="spacer"></div>
+          <input type="text" name="phone" placeholder="Phone" class:"form-right">
         </div>
-        <div class="services-column sc-3 white">
-          <h4>Events</h4>
-          <div class="white-line"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          <div class="services-img si-3"><div class="services-overlay"></div></div>
+        <textarea name="message" name="message" placeholder="Message"></textarea>
+        <div class="gdpr">
+          <input type="checkbox" name="gdpr-box">
+          <p>Lorem ipsum dolor sit amet, sed do magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation consequat.</p>
         </div>
       </div>
     </div>
 
-    <!-- Book Now ----------------------->
-    <div class="book-now white">
-      <div class="book-now-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut labore et dolore magna aliqua.</p>
-        <button type="button" class="red">BOOK NOW</button>
-      </div>
+    <!-- Map Section ----------------------------------->
+    <div class="map-section">
+      <div id="mapid"></div>
     </div>
 
     <!-- Footer ----------------------->
@@ -156,6 +156,8 @@
         <h6>COPYRIGHT &copy TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</h6>
       </div>
     </footer>
+
+    <script src="js/map.js"></script>
 
   </body>
 </html>

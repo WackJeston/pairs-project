@@ -1,9 +1,8 @@
-@use "utility/colours";
-
 //---------------------------------------
 //  Book Now HomePage
 //---------------------------------------
 
+@use "utility/colours";
 
 .book-now {
   display: flex;
@@ -27,12 +26,11 @@
 }
 
 .book-now button {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 220px;
   margin-top: 40px;
   padding: 10px;
   border: 1px solid gray;
-  border-radius: 2px;
   color: colours.$terracotta;
 }
 

@@ -1,0 +1,118 @@
+//---------------------------------------
+//  Form - Contact Page
+//---------------------------------------
+
+@use "utility/colours";
+
+.form-section {
+  // align-items: center;
+}
+
+// Title Section ---------------------------
+.form-section .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section .black-line {
+  width: 200px;
+}
+
+
+// Form Section ---------------------------
+.form-section .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.form-section .row, .form-container textarea {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-section .row input {
+  flex-grow: 1;
+  height: 30px;
+  min-width: 20px;
+  padding: 0 6px;
+}
+
+.form-section textarea {
+  padding: 5px 6px;
+  height: 125px;
+}
+
+.form-section .row input, .form-section textarea {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.form-section .row input:focus , .form-section textarea:focus {
+  border: 1px solid colours.$clear;
+  outline: 2px solid colours.$darkgray;
+}
+
+.form-section .spacer {
+  width: 20px;
+}
+
+
+// GDPR Section ---------------------------
+.form-section .gdpr {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.form-section .gdpr p {
+  max-width: 100%;
+  margin: 0 0 0 20px;
+  font-size: .9rem;
+}
+
+.form-section .gdpr input {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 8px;
+}
+
+.form-section .gdpr input:after {
+  background-color: colours.$darkgray;
+}
+
+//---------------------------------------
+//  Services Breakpoints
+//---------------------------------------
+
+@media (min-width:481px) {
+  .form-container {
+    width: 401px;
+  }
+}
+
+@media (min-width:769px) {
+  .form-container {
+    width: 688px;
+  }
+}
+
+@media (min-width:1025px) {
+  .form-container {
+    width: 945px;
+  }
+}
+
+@media (min-width:1200px) {
+  .form-container {
+    width: 1100px;
+  }
+}

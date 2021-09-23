@@ -252,10 +252,15 @@ h1 {
 }
 
 // Black Text ----------------------
-.black, .black a {
+.black, .black a, .black button, .black input, .black textarea {
   font-family: 'Montserrat', sans-serif;
   color: black;
   text-decoration: none;
+}
+
+.black input, .black textarea {
+  font-weight: 400;
+  font-size: .9rem;
 }
 
 .black a:hover {
@@ -272,13 +277,19 @@ h1 {
   color: colours.$terracotta;
 }
 
+.black h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 .black h3 {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 
 // White Text ---------------------
-.white, .white a {
+.white, .white a, .white button, .white input, .white textarea {
   font-family: 'Montserrat', sans-serif;
   color: white;
   text-decoration: none;
@@ -308,6 +319,7 @@ h1 {
 
 .white h4 {
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .white h6 {

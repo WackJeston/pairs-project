@@ -1,0 +1,219 @@
+//---------------------------------------
+//  Main Content Section - Services Page
+//---------------------------------------
+
+@use "utility/colours";
+
+// Info Card -------------------
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 80px 0;
+}
+
+.services-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 40px;
+}
+
+.services-container .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-container h3 {
+  margin: 10px 0;
+}
+
+.services-container .black-line {
+  margin: 0;
+  width: 150px;
+}
+
+.services-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  padding: 10px 20px 50px 20px;
+  background-color: colours.$darkgray;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px colours.$darkgray-clear;
+}
+
+.services-container h4 {
+  margin-bottom: 15px;
+}
+
+.services-container .white-line {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.services-container p {
+  margin: 0;
+  font-size: 1.1rem;
+  max-width: 100%;
+}
+
+
+// Image Overlay -------------------
+@keyframes slider {
+  0% {
+    transform: translate3d(0,0,0);
+    z-index: 0;
+  }
+  50% {
+    transform: translate3d(0,100%,0);
+    z-index: 0;
+    height: 60px;
+  }
+  55% {
+    z-index: -1;
+    height: 60px;
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    z-index: -1;
+    height: 60px;
+  }
+}
+
+@keyframes reverse-slider {
+  0% {
+    transform: translate3d(0,0,0);
+    z-index: -1;
+    height: 60px;
+  }
+  50% {
+    transform: translate3d(0,100%,0);
+    z-index: -1;
+    height: 60px;
+  }
+  55% {
+    z-index: -1;
+    height: 60px;
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    z-index: 0;
+  }
+}
+
+.services-column .services-img {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 81%;
+  border-radius: 3px;
+  animation: reverse-slider 0.4s forwards;
+}
+
+.services-column:hover .services-img {
+  animation: slider 0.6s forwards;
+}
+
+.services-container .si-1 {
+  background-image: url("../imgs/marriott-cover-photo.jpg");
+}
+
+.services-container .si-2 {
+  background-image: url("../imgs/katarzyna-pracuch-V98W_4pCrVA-unsplash.jpg");
+}
+
+.services-container .si-3 {
+  background-image: url("../imgs/veganfoodhal.jpg-1600x900.jpg");
+}
+
+.services-container .services-overlay {
+  background-color: colours.$darkgray-clear;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  opacity: 0.4;
+}
+
+
+//---------------------------------------
+//  Services Breakpoints
+//---------------------------------------
+
+@media (min-width:481px) {
+  .services-column {
+    height: auto;
+    width: 401px;
+  }
+
+  .services-column .services-img {
+    height: 80%;
+  }
+}
+
+@media (min-width:769px) {
+  .services-column {
+    width: 688px
+  }
+
+  .services-column .services-img {
+    height: 74%;
+  }
+}
+
+@media (min-width:1025px) {
+  .services-card-container {
+    flex-direction: row;
+    width: 945px;
+  }
+
+  .services-container .title-container {
+    width: 945px;
+    align-items: flex-start;
+  }
+
+  .services-column {
+    width: 280px;
+    margin: 40px 20px 40px 20px;
+  }
+
+  .services-column .services-img {
+    height: 86%;
+  }
+
+  .sc-1 {
+    margin-left: 0;
+  }
+
+  .sc-3 {
+    margin-right: 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .services-card-container {
+    width: 1100px;
+  }
+
+  .services-container .title-container {
+    width: 1100px;
+  }
+
+  .services-column {
+    width: 340px
+  }
+
+  .services-column .services-img {
+    height: 84%;
+  }
+}
