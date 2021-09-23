@@ -12,6 +12,10 @@ html, body {
   overflow-x: hidden;
 }
 
+.page {
+  position: relative;
+}
+
 .container {
   margin: 0 auto;
   display: flex;

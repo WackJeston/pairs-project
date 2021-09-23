@@ -1,0 +1,18 @@
+@use "utility/colours";
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  color: rgba(255,255,255, 0.7);
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgba(255,255,255, 0.8);
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}

@@ -1,14 +1,37 @@
 //---------------------------------------
 //  Carousel HomePage
 //---------------------------------------
+.your-class {
+  display: block;
+}
 
 @use "utility/colours";
 
 .carousel {
-  background-image: url("../imgs/beef.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 375px;
+
+  @media (min-width: 481px){
+    height: 350px;
+  }
+}
+
+.carousel-home-1 {
+  background-image: url("../imgs/beef.jpg");
+}
+
+.carousel-home-2 {
+  background-image: url("../imgs/shaun-meintjes-9JEhyqOtepI-unsplash.jpg");
+}
+
+.carousel-home-3 {
+  background-image: url("../imgs/katarzyna-grabowska-V15j7K48MUE-unsplash.jpg");
+}
+
+.carousel-home-4 {
+  background-image: url("../imgs/kelvin-han-a-niLBbZF4o-unsplash.jpg");
 }
 
 .carousel-overlay {
@@ -17,8 +40,18 @@
   flex-direction: column;
   align-items: center;
   background-color: colours.$darkgray-clear;
-  padding: 40px;
+  padding: 40px 20px;
   margin: 0;
+  height: 100%;
+  justify-content: center;
+
+  @media (min-width: 481px){
+    padding: 40px;
+  }
+
+  @media (min-width: 768px){
+    padding: 40px;
+  }
 }
 
 .carousel-paragraph {
@@ -31,6 +64,11 @@ text-align: center;
 
 .carousel-paragraph p {
   margin: 0 20px;
+  font-size: 0.875rem;
+
+  @media (min-width: 481px){
+    font-size: 1rem;
+  }
 }
 
 .carousel-paragraph .fa-quote-left {

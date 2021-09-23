@@ -6,10 +6,31 @@
 
 .past-events {
   display: flex;
-  background-image: url("../imgs/example-event.jpg");
   background-size: cover;
   background-position: center;
   transition: transform 0.1s, ;
+}
+
+.past-events-1 {
+  background-image: url("../imgs/example-event.jpg");
+}
+
+.past-events-2 {
+  background-image: url("../imgs/event2.jpg");
+}
+
+.past-events-3 {
+  background-image: url("../imgs/event3.jpg");
+}
+
+.past-events-4 {
+  background-image: url("../imgs/event4.jpg");
+  background-position: bottom;
+}
+
+.past-events-5 {
+  background-image: url("../imgs/event5.jpg");
+  background-position: bottom;
 }
 
 .past-events:hover {
@@ -29,7 +50,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  height: 350px;
+  height: 400px;
   text-align: center;
   padding: 20px;
 }

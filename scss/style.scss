@@ -3,6 +3,8 @@
 @use "utility/buttons";
 @use "utility/icons";
 @use "utility/body";
+@use "utility/slickcarousel";
+@use "utility/burger-menu";
 
 @use "main/header";
 @use "main/footer";
@@ -22,3 +24,5 @@
 
 @use "contact/form";
 @use "contact/map";
+
+@use "testimonials/testimonials-page";

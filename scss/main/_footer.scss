@@ -8,7 +8,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: colours.$terracotta;
-  padding: 40px 40px 10px 40px;
+  padding: 40px 20px 10px 20px;
 }
 
 .footer-main {
@@ -70,21 +70,22 @@ footer i {
 }
 
 
-@media (min-width:769px) {
+@media (min-width:768px) {
   .footer-main {
     flex-direction: row;
-    justify-content: flex-start;
     width: 688px;
+    justify-content: space-between;
   }
 
   .footer-column {
-    margin: 0 20px;
+    margin: 0;
   }
 }
 
 @media (min-width:1025px) {
   .footer-main {
     width: 945px;
+    justify-content: flex-start;
   }
 
   .footer-column {
@@ -92,6 +93,7 @@ footer i {
   }
 
   .footer-contact {
+    margin: 0 20px;
     margin-left: 0;
   }
 }
