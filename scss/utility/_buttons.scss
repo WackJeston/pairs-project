@@ -47,10 +47,14 @@
   text-transform: uppercase;
   background-color: colours.$terracotta;
   padding: 0.75rem 2.5rem;
-  margin: 10px auto;
+  margin: 10px auto 10px 20px;
   letter-spacing: 2px;
   line-height: 1.65rem;
   border: 1px solid #4a1e19;
+
+  @media (min-width: 481px){
+    margin: 10px auto 10px 40px;
+  }
 
   @media (min-width: 768px){
     display: none;

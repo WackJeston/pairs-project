@@ -28,24 +28,6 @@
   }
 }
 
-.burger-outer {
-
-}
-
-.p-underlined {
-  position: relative;
-}
-
-.p-underlined:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: -10px;
-  background-color: white;
-}
-
 .burger-menu ul {
   list-style: none;
   color: white;
@@ -64,4 +46,19 @@
 .burger-book-container {
   display: flex;
   justify-content: center;
+}
+
+.p-underlined {
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.p-underlined:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: white;
 }

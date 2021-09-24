@@ -88,9 +88,10 @@ h1 {
   position: relative;
   margin: 0.5rem 0.5rem;
   overflow: hidden;
+  display: none;
 
   @media (min-width: 768px){
-
+    display: block;
   }
 
   @media (min-width: 1025px){
@@ -329,6 +330,8 @@ h1 {
 .black h3 {
   font-size: 2rem;
   text-transform: uppercase;
+  line-height: 2rem;
+  height: 32px;
 }
 
 
