@@ -117,7 +117,12 @@
 
       <!-- Contact Form Section ----------------------------->
       <div class="form-section black">
-        <div class="form-container">
+        <div class="message-complete" id="message-complete">
+          <h3>Message Sent</h3>
+          <div class="black-line"></div>
+          <p>Thank you for contacting us! We will reply as soon as we can.</p>
+        </div>
+        <div class="form-container" id="form-complete">
           <!-- Contact Title -->
           <div class="title-container">
             <h3>get in touch</h3>
@@ -125,24 +130,24 @@
           </div>
           <!-- Contact Form -->
           <div class="row">
-            <input type="text" name="first-name" placeholder="First Name" class:"form-left">
+            <input type="text" name="first-name" placeholder="First Name" class:"form-left" id="first-name">
             <div class="spacer"></div>
-            <input type="text" name="last-name" placeholder="Last Name" class:"form-right">
+            <input type="text" name="last-name" placeholder="Last Name" class:"form-right" id="last-name">
           </div>
           <div class="row">
-            <input type="text" name="email" placeholder="Email" class:"form-left">
+            <input type="text" name="email" placeholder="Email" class:"form-left" id="email">
             <div class="spacer"></div>
-            <input type="text" name="phone" placeholder="Phone" class:"form-right">
+            <input type="number" name="phone" placeholder="Phone" class:"form-right" id="phone">
           </div>
-          <textarea name="message" name="message" placeholder="Message"></textarea>
+          <textarea name="message" name="message" placeholder="Message" id="message"></textarea>
           <div class="gdpr">
-            <input type="checkbox" name="gdpr-box">
+            <input type="checkbox" name="gdpr-box" id="gdpr">
             <p>Lorem ipsum dolor sit amet, sed do magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation consequat.</p>
           </div>
           <div class="recaptcha-submit">
-            <button class="g-recaptcha" data-sitekey="6LeVr4YcAAAAANCra7taHRm4WWhYgy4LMc0PWJG4" data-callback='onSubmit' data-action='submit'>I am not a robot!<i class="fas fa-check"></i></button>
+            <button class="g-recaptcha" data-sitekey="6LeVr4YcAAAAANCra7taHRm4WWhYgy4LMc0PWJG4" data-callback='onSubmit' data-action='submit' id="recaptcha">I am not a robot!<i class="fas fa-check" id="tick"></i></button>
 
-            <button class="submit-button">Submit</button>
+            <button class="submit-button" id="submit">Submit</button>
           </div>
         </div>
         <!-- Map Section -->

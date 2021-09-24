@@ -11,6 +11,15 @@
   margin: 20px 40px 40px 40px;
 }
 
+// Replacement Section -----------------------
+.form-section .message-complete {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
+}
+
 
 // Title Section ---------------------------
 .form-section .title-container {
@@ -30,6 +39,8 @@
 // Form Section ---------------------------
 .form-section .form-container {
   width: 100%;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .form-section .row, .form-container textarea {
@@ -58,7 +69,8 @@
 
 .form-section .row input:focus , .form-section textarea:focus {
   border: 1px solid colours.$clear;
-  outline: 2px solid colours.$darkgray;
+  outline: none;
+  box-shadow: 0 0 0 1pt colours.$darkgray;
 }
 
 .form-section .spacer {
@@ -87,8 +99,9 @@
   min-width: 15px;
   min-height: 15px;
   position: relative;
-  top: 7px;
-  left: 5px;
+  border-radius: 5px;
+  // top: 7px;
+  // left: 5px;
 }
 
 .form-section .gdpr input:after {
@@ -125,10 +138,6 @@
   display: none;
 }
 
-.form-section .g-recaptcha:focus .fa-check {
-  display: flex;
-}
-
 .form-section .submit-button {
   margin: 0 0 0 auto;
   text-transform: uppercase;
@@ -156,10 +165,18 @@
   .form-section .form-container {
     width: 401px;
   }
+
+  .form-section .message-complete {
+    width: 401px;
+  }
 }
 
 @media (min-width:769px) {
   .form-section .form-container {
+    width: 688px;
+  }
+
+  .form-section .message-complete {
     width: 688px;
   }
 }
@@ -173,6 +190,11 @@
   }
 
   .form-section .form-container {
+    width: 452px;
+    margin: 0 40px 40px 0;
+  }
+
+  .form-section .message-complete {
     width: 452px;
     margin: 0 40px 40px 0;
   }
