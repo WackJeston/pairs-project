@@ -4,141 +4,48 @@
 
 @use "utility/colours";
 
-.partners {
+#partners {
+}
+
+.partners-header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 40px;
+  width: 100%;
 }
 
-.partners-container {
-  display: flex;
-  flex-direction: column;
+.partner-img {
+  width: 100%;
+  margin-bottom: 50px;
   align-items: center;
-}
-
-.partners h3 {
-  margin: 20px 0 0 0;
-}
-
-.partners .black-line {
-  width: 160px;
-  margin: 10px 0 20px 0;
-}
-
-.partners-logos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.partners-logos div {
-  background-size: cover;
-  background-position: center;
   transition: transform 0.2s;
   transition-delay: 0.15s;
+
+  @media (min-width: 768px) {
+    width: 30%;
+    margin: 0 auto 50px;
+  }
 }
 
-.partners-logos div:hover {
+.partner-img-grey {
+  display: block;
+  width: 100%;
+}
+
+.partner-img-colour {
+  display: none;
+  width: 100%;
+}
+
+.partner-img:hover {
   transform: scale(1.05);
   transition-timing-function: cubic-bezier(.22,.68,0,1.71);
-  cursor: pointer;
 }
 
-.quarr {
-  height: 200px;
-  width: 120px;
-  background-image: url("../imgs/quarr-group-gray.png");
-  margin-top: 20px;
+.partner-img:hover .partner-img-grey {
+  display: none;
 }
 
-.quarr:hover {
-  background-image: url("../imgs/quarr-group.png");
-}
-
-.pabulum {
-  height: 60px;
-  width: 320px;
-  background-image: url("../imgs/pabulum-gray.jpg");
-  margin: 30px 0;
-}
-
-.pabulum:hover {
-  background-image: url("../imgs/pabulum.jpg");
-}
-
-.mountjoy {
-  height: 74px;
-  width: 310px;
-  background-image: url("../imgs/mountjoy-gray.png");
-  margin: 30px 0;
-  transition: transform 0.2s;
-  transition-delay: 0.2s;
-}
-
-.mountjoy:hover {
-  background-image: url("../imgs/mountjoy.png");
-}
-
-
-
-//---------------------------------------
-//  Partners Breakpoints
-//---------------------------------------
-
-
-
-@media (min-width:769px) {
-  .partners-container {
-    width: 688px;
-  }
-
-  .partners h3, .partners .black-line {
-    align-self: flex-start;
-  }
-
-  .partners-logos {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 688px;
-  }
-
-  .partners-logos div {
-    margin: 20px 40px;
-  }
-
-  .quarr {
-    margin-right: 0;
-  }
-}
-
-@media (min-width:1025px) {
-  .partners-container {
-    width: 980px;
-  }
-
-  .partners-logos {
-    width: 980px;
-  }
-
-  .partners-logos div {
-    margin: 20px 30px;
-  }
-}
-
-@media (min-width:1200px) {
-  .partners-container {
-    width: 1100px;
-  }
-
-  .partners-logos {
-    width: 1100px;
-  }
-
-  .partners-logos div {
-    margin: 20px 40px;
-  }
+.partner-img:hover .partner-img-colour {
+  display: block;
 }
