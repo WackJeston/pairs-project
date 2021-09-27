@@ -190,13 +190,57 @@
 .logo-line2 {
   color: black;
   font-size: 3rem;
-  // margin: 0px auto 15px;
   padding: 20px 0 15px;
 
   @media (min-width: 768px){
     font-size: 2rem;
     font-weight: 300;
     padding: 0;
+  }
+}
+
+.sticky-header-logo-container {
+  display: none;
+
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+}
+
+.sticky-header-logo-container a{
+    display: flex;
+}
+
+.logo-stickyheader {
+  display: none;
+
+  @media (min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.logo-stickyheader-line1 {
+  display: none;
+
+  @media (min-width: 768px){
+    font-family: 'Mr Dafoe', cursive;
+    display: block;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.35rem;
+    line-height: 1.25rem;
+  }
+}
+
+.logo-stickyheader-line2 {
+  display: none;
+
+  @media (min-width: 768px){
+    display: block;
+    color: black;
+    font-size: 1rem;
   }
 }
 

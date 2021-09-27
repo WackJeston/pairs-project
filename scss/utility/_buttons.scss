@@ -1,24 +1,12 @@
+//---------------------------------------
+//  Buttons
+//---------------------------------------
+
 @use "utility/colours";
 
-.button {
-
-}
-
-.burger-book-btn {
-  font-size: 1.2rem;
-  width: 220px;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 2px;
-  color: colours.$terracotta;
-}
-
-.burger-book-btn:hover {
-  background-color: colours.$terracotta;
-  color: white;
-  border: 1px solid white;
-  cursor: pointer;
-}
+//---------------------------------------
+//  Buttons header
+//---------------------------------------
 
 .button-header {
   display: none;
@@ -61,10 +49,6 @@
   }
 }
 
-.button-nav {
-  padding: 1rem 2rem;
-}
-
 .contact-button-white {
   font-size: 1.2rem;
   width: 220px;
@@ -84,4 +68,31 @@
   color: white;
   border: 1px solid white;
   cursor: pointer;
+}
+
+//---------------------------------------
+//  Buttons burger menu
+//---------------------------------------
+
+.burger-book-btn {
+  font-size: 1.2rem;
+  width: 220px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  color: colours.$terracotta;
+}
+
+.burger-book-btn:hover {
+  background-color: colours.$terracotta;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.burger-button {
+  border: 1px solid colours.$terracotta-dark;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
 }

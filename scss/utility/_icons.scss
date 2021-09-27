@@ -1,4 +1,12 @@
+//---------------------------------------
+//  Icons
+//---------------------------------------
+
 @use "utility/colours";
+
+//---------------------------------------
+//  Icons contact
+//---------------------------------------
 
 .email-icon {
   font-size: 1.25rem;
@@ -10,4 +18,34 @@
   @media (min-width: 768px){
     margin-right: 8px;
   }
+}
+
+//---------------------------------------
+//  Icons nav
+//---------------------------------------
+
+.burger-icon {
+  width: 40px;
+  height: 2px;
+  background-color: colours.$terracotta-dark;
+  display: block;
+  position: relative;
+  margin: 0px auto;
+}
+
+.burger-icon:before, .burger-icon:after {
+  content:"";
+  width: 35px;
+  height: 2px;
+  background-color: colours.$terracotta-dark;
+  display: block;
+  position: absolute;
+}
+
+.burger-icon:before {
+  top: -8px;
+}
+
+.burger-icon:after {
+  top: 8px;
 }

@@ -4,6 +4,10 @@
 
 @use "utility/colours";
 
+//---------------------------------------
+//  Services structure
+//---------------------------------------
+
 .service-card {
   margin: 0 auto 30px;
   width: 100%;
@@ -30,4 +34,45 @@
   @media (min-width:1025px) {
     margin: 0 0px 30px auto;
   }
+}
+
+//---------------------------------------
+//  Services styles
+//---------------------------------------
+
+.service-card-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background-size: cover;
+  background-position-y: center;
+  transition: transform 0.2s ease-in;
+
+  @media (min-width: 768px) {
+    height: 250px;
+  }
+
+  @media (min-width: 1025px) {
+    height: 200px;
+  }
+}
+
+.service-card-img-container {
+  overflow: hidden;
+}
+
+.service-card-img-1 {
+  background-image: url("../imgs/corporate.jpg");
+}
+
+.service-card-img-2 {
+  background-image: url("../imgs/weddings.jpg");
+}
+
+.service-card-img-3 {
+  background-image: url("../imgs/events.jpg");
+}
+
+.service-card-img:hover {
+  transform: scale(1.2);
 }
