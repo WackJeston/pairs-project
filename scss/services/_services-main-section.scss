@@ -150,6 +150,17 @@
 //  Services Breakpoints
 //---------------------------------------
 
+@media (max-width:481px) {
+  .services-column {
+    height: auto;
+    width: 300px;
+  }
+
+  .services-column .services-img {
+    height: 84%;
+  }
+}
+
 @media (min-width:481px) {
   .services-column {
     height: auto;
