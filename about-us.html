@@ -25,7 +25,6 @@
 
   <body>
     <div class="page">
-
       <div class="burger-overlay">
         <div class="container">
           <div class="burger-menu">
@@ -63,7 +62,6 @@
         </div>
       </div>
       <!-- Header -->
-      
       <header>
         <div class="header-outer">
           <div class="header-contact">
@@ -75,8 +73,8 @@
                 </div>
               </a>
               <div class="contact-container">
-                <a class="contact-email contact-text" href="mailto:info@terracotta.com?subject=feedback"><i class="fas fa-envelope email-icon"></i>info@terracotta.com</a>
-                <a class="contact-phone contact-text" href="tel:01235-852-894"><i class="fas fa-phone phone-icon"></i>01235-852-894</a>
+                <a class="contact-email" href="mailto:info@terracotta.com?subject=feedback"><i class="fas fa-envelope email-icon"></i>info@terracotta.com</a>
+                <a class="contact-phone" href="tel:01235-852-894"><i class="fas fa-phone phone-icon"></i>01235-852-894</a>
               </div>
             </div>
           </div>
@@ -88,16 +86,6 @@
                 <span class="header-h1">quality local<br> Catering</span>
                 <span class="header-h2">Restaurant quality food made <br> with locally sourced <br> ingredients</span>
                 <a class="button button-header" href="#">book now</a>
-                <a class="button button-header-mobile" href="#">book now</a>
-
-                <div class="burger-container">
-                  <div class="burger-button">
-                    <div class="burger-icon-container">
-                      <span class="burger-icon"></span>
-                    </div>
-                    <span class="burger-title">menu</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -106,6 +94,16 @@
             <div class="header-nav-inner">
               <div class="header-subcontainer">
                 <div class="container-nav">
+                  <a class="button button-header-mobile" href="#">book now</a>
+
+                  <div class="burger-container">
+                    <div class="burger-button">
+                      <div class="burger-icon-container">
+                        <span class="burger-icon"></span>
+                      </div>
+                      <span class="burger-title">menu</span>
+                    </div>
+                  </div>
                   <a class="nav-p" href="about-us.html">about us</a>
                   <a class="nav-p" href="services.html">services</a>
                   <a class="nav-p" href="testimonials.html">testimonials</a>
@@ -221,16 +219,16 @@
         </div>
         <!-- Footer Small Print -->
         <div class="footer-smallprint">
-          <h6>COPYRIGHT &copy TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</h6>
+          <h6>COPYRIGHT &amp; TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</h6>
         </div>
       </footer>
     </div>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/sticky-header.js"></script>
-    <script type="text/javascript" src="js/burger-menu.js"></script>
-    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
+    <script src="js/jquery.js"></script>
+    <script src="js/sticky-header.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
     $(document).ready(function(){
       $('.your-class').slick({
         autoplay: true,

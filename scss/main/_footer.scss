@@ -1,7 +1,12 @@
 //---------------------------------------
 //  Footer Main
 //---------------------------------------
+
 @use "utility/colours";
+
+//---------------------------------------
+//  Footer Structure
+//---------------------------------------
 
 footer {
   display: flex;
@@ -17,13 +22,60 @@ footer {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+
+  @media (min-width:481px) {
+    width: 401px;
+  }
+
+  @media (min-width:768px) {
+    flex-direction: row;
+    width: 688px;
+    justify-content: space-between;
+  }
+
+  @media (min-width:1025px) {
+    width: 945px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width:1200px) {
+    width: 1100px;
+  }
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (min-width:768px) {
+    margin: 0;
+  }
+
+  @media (min-width:1025px) {
+    margin: 10px 80px 0 80px;
+  }
+
+  @media (min-width:1200px) {
+    margin: 10px 100px 0 100px;
+  }
 }
+
+.footer-contact {
+
+  @media (min-width:1025px) {
+    margin: 0 20px;
+    margin-left: 0;
+  }
+
+  @media (min-width:1200px) {
+    margin-left: 0;
+  }
+}
+
+//---------------------------------------
+//  Footer style
+//---------------------------------------
 
 footer h4 {
   margin: 0;
@@ -57,57 +109,4 @@ footer i {
   max-width: 100%;
   margin: 20px 0 0 0;
   text-align: center;
-}
-
-//---------------------------------------
-//  Footer Breakpoints
-//---------------------------------------
-
-@media (min-width:481px) {
-  .footer-main {
-    width: 401px;
-  }
-}
-
-
-@media (min-width:768px) {
-  .footer-main {
-    flex-direction: row;
-    width: 688px;
-    justify-content: space-between;
-  }
-
-  .footer-column {
-    margin: 0;
-  }
-}
-
-@media (min-width:1025px) {
-  .footer-main {
-    width: 945px;
-    justify-content: flex-start;
-  }
-
-  .footer-column {
-    margin: 10px 80px 0 80px;
-  }
-
-  .footer-contact {
-    margin: 0 20px;
-    margin-left: 0;
-  }
-}
-
-@media (min-width:1200px) {
-  .footer-main {
-    width: 1100px;
-  }
-
-  .footer-column {
-    margin: 10px 100px 0 100px;
-  }
-
-  .footer-contact {
-    margin-left: 0;
-  }
 }

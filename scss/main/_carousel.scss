@@ -4,6 +4,10 @@
 
 @use "utility/colours";
 
+//---------------------------------------
+//  Carousel structure
+//---------------------------------------
+
 .your-class {
   display: block;
 }
@@ -19,22 +23,6 @@
   }
 }
 
-.carousel-home-1 {
-  background-image: url("../imgs/beef.jpg");
-}
-
-.carousel-home-2 {
-  background-image: url("../imgs/shaun-meintjes-9JEhyqOtepI-unsplash.jpg");
-}
-
-.carousel-home-3 {
-  background-image: url("../imgs/katarzyna-grabowska-V15j7K48MUE-unsplash.jpg");
-}
-
-.carousel-home-4 {
-  background-image: url("../imgs/kelvin-han-a-niLBbZF4o-unsplash.jpg");
-}
-
 .carousel-overlay {
   display: flex;
   flex-grow: 1;
@@ -47,12 +35,28 @@
   justify-content: center;
 
   @media (min-width: 481px){
-    padding: 40px;
+    padding: 50px 40px;
   }
+}
 
-  @media (min-width: 768px){
-    padding: 40px;
-  }
+//---------------------------------------
+//  Carousel style
+//---------------------------------------
+
+.carousel-home-1 {
+  background-image: url("../imgs/beef.jpg");
+}
+
+.carousel-home-2 {
+  background-image: url("../imgs/home-carousel2.jpg");
+}
+
+.carousel-home-3 {
+  background-image: url("../imgs/home-carousel3.jpg");
+}
+
+.carousel-home-4 {
+  background-image: url("../imgs/home-carousel4.jpg");
 }
 
 .carousel-paragraph {
@@ -69,6 +73,19 @@ text-align: center;
 
   @media (min-width: 481px){
     font-size: 1rem;
+    width: 401px;
+  }
+
+  @media (min-width: 768px){
+    width: 688px;
+  }
+
+  @media (min-width: 1025px){
+    width: 945px;
+  }
+
+  @media (min-width: 1200px){
+    width: 1100px;
   }
 }
 
@@ -83,6 +100,14 @@ text-align: center;
 .carousel .white-line {
   width: 60%;
   margin: 20px 0;
+
+  @media (min-width: 481px){
+    width: 200px;
+  }
+
+  @media (min-width: 1025px){
+    width: 350px;
+  }
 }
 
 .carousel-overlay h6 {
@@ -92,61 +117,12 @@ text-align: center;
 .carousel .dot-container {
   width: 40%;
   margin: 35px 0 8px 0;
-}
 
-
-
-
-//---------------------------------------
-//  Carousel Breakpoints
-//---------------------------------------
-
-
-
-@media (min-width:481px) and (max-width:1024px) {
-  .carousel-overlay {
-    padding: 50px 40px;
-  }
-
-  .carousel-paragraph p {
-    width: 401px;
-  }
-
-  .carousel .white-line{
-    width: 200px;
-  }
-
-  .carousel .dot-container {
+  @media (min-width: 481px){
     width: 150px;
   }
-}
 
-@media (min-width: 768px) {
-  .carousel-paragraph p {
-    width: 688px;
-  }
-}
-
-@media (min-width:1025px) {
-  .carousel-overlay {
-    padding: 60px 40px;
-  }
-
-  .carousel-paragraph p {
-    width: 945px;
-  }
-
-  .carousel .white-line {
-    width: 350px;
-  }
-
-  .carousel .dot-container {
+  @media (min-width: 1025px){
     width: 250px;
-  }
-}
-
-@media (min-width:1200px) {
-  .carousel-paragraph p {
-    width: 1100px;
   }
 }

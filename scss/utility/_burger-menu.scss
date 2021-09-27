@@ -1,4 +1,12 @@
+//---------------------------------------
+//  Burger menu
+//---------------------------------------
+
 @use "utility/colours";
+
+//---------------------------------------
+//  Burger menu structure
+//---------------------------------------
 
 .burger-overlay {
   background: rgba(0,0,0,0.4);
@@ -28,6 +36,23 @@
   }
 }
 
+.burger-book-container {
+  display: flex;
+  justify-content: center;
+}
+
+.burger-icon-container {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  margin: 5px auto 0px;
+  align-items: center;
+}
+
+//---------------------------------------
+//  Burger menu style
+//---------------------------------------
+
 .burger-menu ul {
   list-style: none;
   color: white;
@@ -43,11 +68,6 @@
   display: block;
 }
 
-.burger-book-container {
-  display: flex;
-  justify-content: center;
-}
-
 .p-underlined {
   position: relative;
   font-size: 1.25rem;
@@ -61,4 +81,8 @@
   left: 0;
   bottom: -10px;
   background-color: white;
+}
+
+.burger-title {
+  padding: 0px 0 3px;
 }

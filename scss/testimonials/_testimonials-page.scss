@@ -1,4 +1,12 @@
+//---------------------------------------
+//  Testimonials page
+//---------------------------------------
+
 @use "utility/colours";
+
+//---------------------------------------
+//  Testimonials structure
+//---------------------------------------
 
 .testimonials-intro {
   margin: 20px 0 50px;
@@ -16,15 +24,6 @@
     height: 700px;
     font-size:1rem;
   }
-
-  @media (min-width: 1200px){
-    // width: 75%;
-  }
-}
-
-.testimonial:hover .testimonial-outer {
-  opacity: 0;
-  transition: opacity 0.3s ease-out;
 }
 
 .testimonial-outer {
@@ -39,6 +38,86 @@
   position: relative;
   color: white;
   width: 75%;
+}
+
+.review {
+  background: #2e3131;
+  color: white;
+  padding: 30px 0 30px;
+}
+
+.review-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.review-content {
+  display: flex;
+  margin-bottom: 30px;
+
+  @media (min-width: 1025px) {
+    width: 74%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 75%;
+  }
+}
+
+//---------------------------------------
+//  Testimonials style
+//---------------------------------------
+
+.testimonial:hover .testimonial-outer {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.testimonials-header {
+  color: colours.$terracotta;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  display: flex;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2.5px;
+  margin: 30px auto;
+
+  @media (min-width:481px) {
+  margin: 50px auto;
+  justify-content: center;
+  font-size: 2.5rem;
+  }
+
+  @media (min-width: 768px){
+  margin: 50px 0;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 70%;
+  }
+
+  @media (min-width: 1025px){
+    width: 100%;
+  }
+}
+
+.testimonials-header:after {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 215px;
+  height: 1px;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+
+  @media (min-width: 768px){
+  left: 0px;
+  transform: translate(0%);
+  }
 }
 
 .testimonial-inner:before, .testimonial-inner:after {
@@ -86,33 +165,6 @@
   top: -20px;
 }
 
-.review {
-  background: #2e3131;
-  color: white;
-  padding: 30px 0 30px;
-}
-
-.review-inner {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.review-content {
-  display: flex;
-  margin-bottom: 30px;
-
-  @media (min-width: 1025px) {
-    width: 74%;
-  }
-
-  @media (min-width: 1200px) {
-    width: 75%;
-  }
-}
-
 .review-contact {
   display: flex;
   width: 100%;
@@ -124,55 +176,44 @@
 
 .testimonial-1 {
   background-image: url("../imgs/event5.jpg");
-
 }
 
 .testimonial-2 {
   background-image: url("../imgs/event2.jpg");
-
 }
 
 .testimonial-3 {
   background-image: url("../imgs/event3.jpg");
-
 }
 
 .testimonial-4 {
   background-image: url("../imgs/example-event.jpg");
-
 }
 
 .testimonial-5 {
   background-image: url("../imgs/event5b.jpg");
-
 }
 
 .testimonial-6 {
   background-image: url("../imgs/event6.jpg");
-
 }
 
 .testimonial-7 {
   background-image: url("../imgs/event7.jpg");
-
 }
 
 .testimonial-8 {
   background-image: url("../imgs/event8.jpg");
-
 }
 
 .testimonial-9 {
   background-image: url("../imgs/event9.jpg");
-
 }
 
 .testimonial-10 {
   background-image: url("../imgs/event4.jpg");
-
 }
 
 .testimonial-11 {
   background-image: url("../imgs/event11.jpg");
-
 }
