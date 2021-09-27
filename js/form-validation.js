@@ -89,7 +89,7 @@ submitElement.addEventListener("click", function(){
 // GDPR Validation -----------------------------
 submitElement.addEventListener("click", function(){
   if (gdprElement.checked == true){
-    gdprElement.style.outline = "2px solid green"
+    gdprElement.style.outline = "1px solid green"
     correctGdpr = true
   } else{
     gdprElement.style.outline = "2px solid red"
@@ -102,6 +102,14 @@ reCaptchaElement.addEventListener("click", function(){
   if (correctReCaptcha == false){
     tickElement.style.display = "flex"
     correctReCaptcha = true
+  }
+})
+
+submitElement.addEventListener("click", function(){
+  if (correctReCaptcha == false){
+    reCaptchaElement.style.border = "2px solid red"
+  } else{
+    reCaptchaElement.style.border = "1px solid green"
   }
 })
 
