@@ -14,10 +14,19 @@
 // Replacement Section -----------------------
 .form-section .message-complete {
   display: none;
-  flex-direction: column;
+  max-width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 40px;
+}
+
+.message-complete .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
