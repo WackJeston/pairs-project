@@ -62,3 +62,49 @@
   bottom: -10px;
   background-color: white;
 }
+
+.burger-button {
+  // margin: 5px;
+  border: 1px solid colours.$terracotta-dark;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-icon-container {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  margin: 5px auto 0px;
+  align-items: center;
+}
+
+.burger-icon {
+  width: 40px;
+  height: 2px;
+  background-color: colours.$terracotta-dark;
+  display: block;
+  position: relative;
+  margin: 0px auto;
+}
+
+.burger-icon:before, .burger-icon:after {
+  content:"";
+  width: 35px;
+  height: 2px;
+  background-color: colours.$terracotta-dark;
+  display: block;
+  position: absolute;
+}
+
+.burger-icon:before {
+  top: -8px;
+}
+
+.burger-icon:after {
+  top: 8px;
+}
+
+.burger-title {
+  padding: 0px 0 3px;
+}

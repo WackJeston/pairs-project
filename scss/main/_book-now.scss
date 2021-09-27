@@ -4,6 +4,10 @@
 
 @use "utility/colours";
 
+//---------------------------------------
+//  Book Now structure
+//---------------------------------------
+
 .book-now {
   display: flex;
   align-items: center;
@@ -18,11 +22,37 @@
   align-items: center;
   text-align: left;
   width: 100%;
+
+  @media (min-width:481px) {
+    width: 401px;
+  }
+
+  @media (min-width:768px) {
+    width: 688px;
+  }
+
+  @media (min-width:1025px) {
+    flex-direction: row;
+    justify-content: center;
+    width: 945px;
+  }
+
+  @media (min-width:1200px) {
+    width: 1100px;
+  }
 }
+
+//---------------------------------------
+//  Book Now style
+//---------------------------------------
 
 .book-now p {
   width: 100%;
   margin: 0;
+
+  @media (min-width:1025px){
+    justify-content: flex-start;
+  }
 }
 
 .book-now button {
@@ -32,6 +62,12 @@
   padding: 10px;
   border: 1px solid gray;
   color: colours.$terracotta;
+
+  @media (min-width:1025px){
+    margin: 0 0 0 20px;
+    width: 350px;
+    justify-content: flex-end;
+  }
 }
 
 .book-now button:hover {
@@ -39,45 +75,4 @@
   color: white;
   border: 1px solid white;
   cursor: pointer;
-}
-
-
-//---------------------------------------
-//  Book Now Breakpoints
-//---------------------------------------
-
-@media (min-width:481px) {
-  .book-now-container {
-    width: 401px;
-  }
-}
-
-@media (min-width:768px) {
-  .book-now-container {
-    width: 688px;
-  }
-}
-
-@media (min-width:1025px) {
-  .book-now-container {
-    flex-direction: row;
-    justify-content: center;
-    width: 945px;
-  }
-
-  .book-now button {
-    margin: 0 0 0 20px;
-    width: 350px;
-    justify-content: flex-end;
-  }
-
-  .book-now p {
-    justify-content: flex-start;
-  }
-}
-
-@media (min-width:1200px) {
-  .book-now-container {
-    width: 1100px;
-  }
 }

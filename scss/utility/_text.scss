@@ -14,7 +14,7 @@ h1 {
   font-weight: 400;
 }
 
-.contact-text:hover {
+.contact-container a:hover {
   color: #af473c;
 }
 
@@ -207,27 +207,6 @@ h1 {
   transform: scale(1.2);
 }
 
-// .service-card-img  img{
-//   display: none;
-//   transition: transform 0.2s ease-in;
-//   width: 100%;
-//   object-fit: cover;
-//   height: 180px;
-//
-//   @media (min-width:768px) {
-//     height: 250px;
-//   }
-//
-//   @media (min-width:1025px) {
-//     height: 180px;
-//   }
-// }
-//
-// .service-card-img  img:hover{
-//   transform: scale(1.2);
-//   transition: transform 0.2s ease-in;
-// }
-
 .service-card-header {
   font-size: 1.5rem;
   color: colours.$terracotta;
@@ -250,50 +229,6 @@ h1 {
 
 .service-card {
   text-align: center;
-}
-
-.testimonials-header {
-  color: colours.$terracotta;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  display: flex;
-  text-transform: uppercase;
-  position: relative;
-  letter-spacing: 2.5px;
-  margin: 30px auto;
-
-  @media (min-width:481px) {
-  margin: 50px auto;
-  justify-content: center;
-  font-size: 2.5rem;
-  }
-
-  @media (min-width: 768px){
-  margin: 50px 0;
-  justify-content: flex-start;
-  align-self: flex-start;
-  width: 70%;
-  }
-
-  @media (min-width: 1025px){
-    width: 100%;
-  }
-}
-
-.testimonials-header:after {
-  content: "";
-  background: black;
-  position: absolute;
-  width: 215px;
-  height: 1px;
-  bottom: -20px;
-  left: 50%;
-  transform: translate(-50%);
-
-  @media (min-width: 768px){
-  left: 0px;
-  transform: translate(0%);
-  }
 }
 
 // Black Text ----------------------

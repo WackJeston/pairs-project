@@ -32,7 +32,7 @@ let correctReCaptcha = false
 
 
 // First Name Validation -----------------------------
-submitElement.addEventListener("click", () => {
+submitElement.addEventListener("click", function(){
   if (firstNameElement.value == ""){
     firstNameElement.style.border = "2px solid red"
     correctFirstName = false
@@ -43,7 +43,7 @@ submitElement.addEventListener("click", () => {
 })
 
 // Last Name Validation -----------------------------
-submitElement.addEventListener("click", () => {
+submitElement.addEventListener("click", function(){
   if (lastNameElement.value == ""){
     lastNameElement.style.border = "2px solid red"
     correctLastName = false
@@ -54,7 +54,7 @@ submitElement.addEventListener("click", () => {
 })
 
 // Message Validation -----------------------------
-submitElement.addEventListener("click", () => {
+submitElement.addEventListener("click", function(){
   if (messageElement.value == ""){
     messageElement.style.border = "2px solid red"
     correctMessage = false
@@ -65,7 +65,7 @@ submitElement.addEventListener("click", () => {
 })
 
 // Email Validation -----------------------------
-submitElement.addEventListener("click", () => {
+submitElement.addEventListener("click", function(){
   if (emailValidator.test(emailElement.value) == true){
     emailElement.style.border = "1px solid green"
     correctEmail = true
@@ -76,7 +76,7 @@ submitElement.addEventListener("click", () => {
 })
 
 // Phone Validation -----------------------------
-submitElement.addEventListener("click", () => {
+submitElement.addEventListener("click", function(){
   if (phoneValidator.test(phoneElement.value) == true){
     phoneElement.style.border = "1px solid green"
     correctPhone = true
@@ -87,7 +87,7 @@ submitElement.addEventListener("click", () => {
 })
 
 // GDPR Validation -----------------------------
-submitElement.addEventListener("click", () => {
+submitElement.addEventListener("click", function(){
   if (gdprElement.checked == true){
     gdprElement.style.outline = "2px solid green"
     correctGdpr = true
@@ -98,7 +98,7 @@ submitElement.addEventListener("click", () => {
 })
 
 // reCAPTCHA Validation -----------------------------
-reCaptchaElement.addEventListener("click", () => {
+reCaptchaElement.addEventListener("click", function(){
   if (correctReCaptcha == false){
     tickElement.style.display = "flex"
     correctReCaptcha = true
@@ -106,7 +106,7 @@ reCaptchaElement.addEventListener("click", () => {
 })
 
 // Completion Section ---------------------------
-submitElement.addEventListener("click", () => {
+submitElement.addEventListener("click", function(){
   if (correctFirstName == true && correctLastName == true && correctMessage == true && correctEmail == true && correctPhone == true && correctGdpr == true && correctReCaptcha == true){
     formComplete.style.display = "none"
     messageComplete.style.display = "flex"

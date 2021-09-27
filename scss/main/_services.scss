@@ -1,11 +1,12 @@
+//---------------------------------------
+//  Services HomePage
+//---------------------------------------
+
 @use "utility/colours";
 
 .service-card {
   margin: 0 auto 30px;
   width: 100%;
-
-  @media (min-width:768px) {
-  }
 
   @media (min-width:1025px) {
     width: 280px;
@@ -20,13 +21,7 @@
 }
 
 .card-2 {
-  margin: 0 auto 30px;
-
   @media (min-width:1025px) {
-    margin: 0 auto;
-  }
-
-  @media (min-width:1200px) {
     margin: 0 auto;
   }
 }
@@ -34,23 +29,5 @@
 .card-3 {
   @media (min-width:1025px) {
     margin: 0 0px 30px auto;
-  }
-}
-
-.services-outer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-.services-inner {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px auto 0;
-  width: 100%;
-
-  @media (min-width:768px) {
-    margin: 16px auto 0;
   }
 }

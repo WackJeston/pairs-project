@@ -4,15 +4,6 @@
 
 @use "utility/colours";
 
-#partners {
-}
-
-.partners-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .partner-img {
   width: 100%;
   margin-bottom: 50px;
@@ -37,15 +28,15 @@
   width: 100%;
 }
 
-.partner-img:hover {
-  transform: scale(1.05);
-  transition-timing-function: cubic-bezier(.22,.68,0,1.71);
-}
-
 .partner-img:hover .partner-img-grey {
   display: none;
 }
 
 .partner-img:hover .partner-img-colour {
   display: block;
+}
+
+.partner-img:hover {
+  transform: scale(1.05);
+  transition-timing-function: cubic-bezier(.22,.68,0,1.71);
 }
